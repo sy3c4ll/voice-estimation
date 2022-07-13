@@ -2,7 +2,6 @@ import librosa
 import os
 import sys
 import numpy as np
-from glob import glob
 from tensorflow.keras.models import load_model
 
 model_path = "models/"

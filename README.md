@@ -12,11 +12,12 @@
 
 ```
 Type:  
- 'make' or 'make help' to show this help message  
- 'make data' to download and extract the dataset  
- 'make features' to extract features from the dataset  
- 'make train' to train the model  
- 'make predict' to run prediction
+  'make' or 'make help' to show this help message  
+  'make data' to download and extract the dataset  
+  'make features' to extract features from the dataset  
+  'make train' to train the model  
+  'make predict' to run prediction
+  'make gui' to open a friendly user interface for real-time predictions'
 ```
 
 From `make help`
@@ -30,6 +31,8 @@ Alternatively, the python scripts can be executed directly, although it is not r
 `make train` == `python src/models/train_model.py`
 
 `make predict` == `python src/models/predict_model.py`
+
+`make gui` == `python src/ui/gui.py`
 
 ## License
 

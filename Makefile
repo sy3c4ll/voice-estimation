@@ -7,6 +7,7 @@ help:
 	@echo "  'make features' to extract features from the dataset"
 	@echo "  'make train' to train the model"
 	@echo "  'make predict target=(target audio file path)' to run predictions"
+	@echo "  'make gui' to open a friendly user interface for real-time predictions"
 
 data:
 	@python src/data/make_dataset.py
@@ -20,4 +21,7 @@ train:
 predict:
 	@python src/models/predict_model.py $(target)
 
-.PHONY: help data features train predict
+gui:
+	@python src/ui/gui.py
+
+.PHONY: help data features train predict gui
